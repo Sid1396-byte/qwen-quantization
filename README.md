@@ -11,9 +11,32 @@ This repository contains Python scripts to locally quantize the `Qwen/Qwen2.5-1.
 * `scripts/run_evaluations.sh` / `run_evaluations.py`: Automated scripts containing the `lm_eval` harness commands used to evaluate the quantized models on specific datasets (MMLU, GSM8k, WikiText).
 * `requirements.txt`: Dependencies required to run the code.
 
+
 ## 🛠️ Installation & Setup
 
 1. Clone this repository:
    ```bash
    git clone [https://github.com/Sid1396-byte/qwen-quantization.git](https://github.com/Sid1396-byte/qwen-quantization.git)
    cd qwen-quantization
+
+   ---
+
+## 📈 Benchmark Results
+
+Here are the evaluation results for both quantization methods:
+
+### AWQ Evaluation
+**MMLU & GSM8k Results:**
+![AWQ lm-harness Results](benchmark_images/AWQ_lm_harness.png)
+
+**Perplexity (WikiText):**
+![AWQ Perplexity](benchmark_images/AWQ%20Perplexity.png)
+
+### GPTQ Evaluation
+**MMLU & GSM8k Results:**
+![GPTQ lm-harness Results](benchmark_images/GPTQ_lm_harness.png)
+
+**Perplexity (WikiText):**
+![GPTQ Perplexity](benchmark_images/GPTQ%20Perplexity.png)
+
+---
