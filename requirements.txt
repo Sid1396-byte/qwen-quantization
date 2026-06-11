@@ -1,0 +1,14 @@
+# Core Machine Learning
+torch>=2.2.0
+numpy
+
+# Hugging Face Ecosystem
+transformers>=4.38.0
+datasets
+
+# Quantization Libraries
+gptqmodel
+autoawq
+
+# Inference & Benchmarking
+vllm

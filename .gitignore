@@ -1,0 +1,11 @@
+# Ignore local model folders and zips
+qwen-1.5b-gptq-4bit/
+qwen-1.5b-awq-4bit/
+*.zip
+*.bin
+*.safetensors
+
+# Ignore Python cache and virtual environments
+__pycache__/
+venv/
+.env
