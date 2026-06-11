@@ -12,3 +12,4 @@ autoawq
 
 # Inference & Benchmarking
 vllm
+lm-eval
