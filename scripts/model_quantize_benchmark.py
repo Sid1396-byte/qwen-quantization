@@ -87,7 +87,7 @@ def fair_benchmark(iterations=3):
     avg_throughput = np.mean(throughputs)
 
     print("\n" + "="*45)
-    print(f"THE ULTIMATE MARLIN BENCHMARK ({QUANT_METHOD.upper()})")
+    print(f"THE ULTIMATE BENCHMARK ({QUANT_METHOD.upper()})")
     print("="*45)
     print(f"Batch Size (Prompts) : {len(prompts)}")
     print(f"Tokens per Prompt    : 256 (Forced)")
