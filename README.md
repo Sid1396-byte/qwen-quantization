@@ -1,6 +1,10 @@
 # Qwen-1.5B Quantization and vLLM Benchmark 🚀
 
-NOTE- I compared AWQ and GPTQ on Qwen2.5-1.5B. AWQ achieved higher downstream accuracy on GSM8K and MMLU, while GPTQ achieved marginally lower perplexity. However, the perplexity difference was only about 0.1%, and the benchmark sample sizes were too small for a statistically strong conclusion. Additionally, my GPTQ configuration used desc_act=False, which likely disadvantaged GPTQ. Therefore I would not claim AWQ is universally better based on these results.
+NOTE- Evaluated Qwen2.5-1.5B quantized with AWQ and GPTQ using 4-bit quantization on GSM8K, MMLU (Abstract Algebra, Anatomy), and WikiText.
+
+In this experiment, AWQ achieved higher scores on the selected GSM8K and MMLU subsets, while GPTQ achieved slightly lower perplexity on WikiText.
+
+Note: Results were obtained using a limited evaluation subset (--limit 50) and GPTQ was configured with desc_act=False, so these numbers should be considered exploratory rather than definitive.
 
 This repository contains Python scripts to locally quantize the `Qwen/Qwen2.5-1.5B` model into **4-bit GPTQ** and **4-bit AWQ** formats. It also includes comprehensive benchmarking tools to test the throughput of these models using **vLLM** and evaluate their accuracy using **lm-eval**.
 
